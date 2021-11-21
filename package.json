@@ -1,6 +1,6 @@
 {
   "name": "debug-threads-ns",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Debug namespace structure helper coupled with thread-context",
   "main": "dist/index",
   "scripts": {
@@ -20,6 +20,7 @@
   "author": "Anton Zykov",
   "license": "MIT",
   "dependencies": {
+    "debug-level": "^2.1.2",
     "thread-context": "^0.1.1"
   },
   "devDependencies": {
