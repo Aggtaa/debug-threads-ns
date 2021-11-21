@@ -46,13 +46,6 @@ function createDebugger(namespace: string): ExtendedDebug {
     return proxy;
 }
 
-function setup<T extends ExtendedDebug>(packageName: string): void {
-    debug = createDebugger(packageName) as T;
-}
-
-let debug;
-
-export {
-    debug,
-    setup,
+export default function <T extends ExtendedDebug>(packageName: string): T {
+    return createDebugger(packageName) as T;
 }
