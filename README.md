@@ -10,7 +10,7 @@ You can provide static namespace structure or embed [`thread-context`](https://w
 ## Usage
 Its this simple:
 ```typescript
-import { debug, setup, ExtendedDebugger, threadContext } from "debug-thread-ns";
+import { debug, setup, ExtendedDebugger, threadContext } from "debug-threads-ns";
 import express from 'express';
 
 setup('myAppName');
